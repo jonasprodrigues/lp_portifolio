@@ -1,15 +1,25 @@
 import './App.css';
+import React from "react";
+import Slider from "react-slick";
+import "./Projetos.css"; // Para o CSS personalizado
+
 import Conteudo from './Conteudo';
-import Main from './Main';
+import Home from './Home';
+import Projetos from './Projetos';
+
+// Em App.js ou index.js
+import "slick-carousel/slick/slick.css";        // Estilo básico do carrossel
+import "slick-carousel/slick/slick-theme.css";  // Estilo do tema do carrossel
+
 
 function App() {
   return (
     <div className="App">
         {/* CABEÇALHO */}
-        <Main /> {/* TROCAR POR HOME */}
+        <Home /> {/* TROCAR POR HOME */}
         <Conteudo /> {/* TROCAR POR SERVIÇOS */}
         {/* SECTION FRASE E IMAGEM DE COMPROMETIMENTO */}
-        {/* PORTIFOLIO COM CARDS EXTENSIVOS COM MOUSE E CARRROCEL0 */}
+        <Projetos />
         {/* COMENTARIOS */}
         {/* RODAPE */}
     </div>
